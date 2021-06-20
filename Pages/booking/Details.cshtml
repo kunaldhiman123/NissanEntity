@@ -1,0 +1,49 @@
+﻿@page
+@model Nissan.Pages.booking.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Sale</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sale.UName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sale.UName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sale.Contact)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sale.Contact)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sale.Model)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sale.Model)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sale.Address)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sale.Address)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sale.saleDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sale.saleDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Sale.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
